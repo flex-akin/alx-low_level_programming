@@ -3,7 +3,7 @@ void print_integer(int m);
 
 /**
  * print_number - a function that prints an integer.
- * Description: An input integer
+ * %n Description: An input integer
  * Return: Nothing
  */
 void print_number(int n)
@@ -21,7 +21,7 @@ void print_number(int n)
 
 /**
  * print_integer - A function to priting n
- * Description: an input unsigned integer
+ * %n Description: an input unsigned integer
  * Return: Nothing
  */
 void print_integer(int m)
