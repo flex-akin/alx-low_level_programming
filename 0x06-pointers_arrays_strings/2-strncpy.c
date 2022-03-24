@@ -1,23 +1,25 @@
 #include "main.h"
 
 /**
- * _strcmp - compare
- * @s1 : pointerto char params
- * @s2 : pointer to char params
+ * _strncpy - two words
+ * @dest : pointer to char params
+ * @src : pointer to char params
+ * @n : int params
  * Return: *dest
  */
 
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
-	int R;
 
-	i = 0;
-
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		i++;
+		dest[i] = src[i];
 	}
-	R = s1[i] - s2[i];
-	return (R);
+
+	for ( ; i < n; i++)
+	{
+		dest[i] = '\0';
+	}
+	return (dest);
 }
