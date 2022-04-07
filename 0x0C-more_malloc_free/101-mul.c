@@ -136,7 +136,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("Error");
 		exit(98);
 	}
 	len_1 = str_len(argv[1]), len_2 = str_len(argv[2]);
